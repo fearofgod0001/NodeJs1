@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn1{
+            /* float: left; */
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(103, 204, 63);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .btn{
+            background-color: rgb(255, 255, 255);
+            border: none;
+            width: 105px;
+            height: 30px;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            position: absolute;
+            left: -100px;
+            transition: 0.1s,0.1s ease-in-out;
+        }
+        .btn1:hover .btn{
+            opacity: 0.7;
+            transform: translateX(105px);
+        } 
+    </style>
+</head>
+<body>
+    <div class="btn1">클릭
+        <button class="btn">클릭</button>
+    </div>
+    <input type="text">
+    <a href="https://naver.com">네이버</a>
+
+    <form id="myForm">
+        <label for="username" name="username"></label>
+        <input type="text" id="username">
+        <button type="submit">제출</button>
+    </form>
+
+
+
+    <script src="./이벤트객체.js"></script>
+
+</body>
+</html>

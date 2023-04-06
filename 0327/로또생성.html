@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(240, 240, 240);
+        }
+        .headline{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: rgba(56, 56, 56, 0.712);          
+        }
+        .body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            flex-flow: row wrap;
+        }
+        .num{
+            object-fit: cover;
+            margin: 10px;
+            color: rgb(255, 235, 212);
+            font-size: 50px;
+            height: 110px;
+            width: 110px;
+            background-color: rgb(0, 120, 218);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            box-shadow: 1px 1px 5px black;            
+        }
+        .num1{
+            object-fit: cover;
+            margin: 10px;
+            color: rgb(255, 235, 212);
+            font-size: 50px;
+            height: 110px;
+            width: 110px;
+            background-color: rgba(56, 56, 56, 0.329);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            box-shadow: 1px 1px 5px black;     
+            color: rgb(0, 120, 218);       
+        }
+        #rst{
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(56, 56, 56, 0.329);
+            color: rgb(0, 118, 214);
+            border: none;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 15px;
+            transition: all, 1s, ease, 0.2s;
+            font-weight: bolder;
+        }
+        .but{
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+       #rst:hover{
+            width: 230px;
+            height: 60px;
+            font-size: 25px;            
+        }
+    </style>    
+
+</head>
+<body>
+    <div class="headline">
+        <h1> Lotto Number </h1>
+    </div>
+        <div class="body">
+            <div class ="num" id="num1">?</div>
+            <div class ="num1" id="num2">?</div>
+            <div class ="num" id="num3">?</div>
+            <div class ="num1" id="num4">?</div>
+            <div class ="num" id="num5">?</div>
+            <div class ="num1" id="num6">?</div>
+        </div>
+        <br>
+        <div class="but">   
+            <button onclick="rnd()" id="rst">P U S H</button>
+        </div>
+    
+    <script src="/0327/로또생성.js"></script>
+
+</body>
+</html>

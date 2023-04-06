@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 240, 240, 0.849);
+            color: rgb(53, 31, 102);
+        }
+        #head{
+            background-image: url(./R.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 200px;           
+        }
+        #screen{
+            background-color: rgb(53, 53, 53);
+            height: 25px;
+            width: 100%;
+            color: white;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin: 5px;
+            background-color: rgb(53, 31, 102);
+            color: rgb(240, 240, 240);
+            border: none;
+            width: 200px;
+            height: 66px;
+            font-size: 20px;
+            font-weight: bolder;
+            border-radius: 10px;         
+            transition: ease 0.15s;
+        }
+        button:hover{
+            background-color: rgba(53, 31, 102, 0.185);
+            font-size: 140%;
+            color: rgba(53, 31, 102);
+        }
+        #selectFunc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #selectSit{
+            display: none;
+            justify-content: center;
+            align-items: center;            
+        }
+        #selectSit2{
+            display: none;
+            justify-content: center;
+            align-items: center;            
+        }
+        #selectSit3{
+            display: none;
+            justify-content: center;
+            align-items: center;            
+        }
+        #total{
+            font-size: 20px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            height: 30px;
+            width:  30px;
+        }
+        .inner{
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inbody">
+        <div id="head">
+        
+        </div>
+        <div id="selectFunc">
+            <button id="ticketing">자리확인</button>
+            <button id="ending">예매하기</button>
+        </div>
+        <br>
+        
+        <div id="screen">screen</div>
+        <br>
+            <div id="selectSit">             
+                    <input type="checkbox" name="sit" id="sit1" value="12000">
+                    <input type="checkbox" name="sit" id="sit2" value="12000">                
+                    <input type="checkbox" name="sit" id="sit3" value="12000">
+                    <input type="checkbox" name="sit" id="sit4" value="12000">
+                    <input type="checkbox" name="sit" id="sit5" value="12000">
+                    <input type="checkbox" name="sit" id="sit6" value="12000">
+                    <input type="checkbox" name="sit" id="sit7" value="12000">
+                    <input type="checkbox" name="sit" id="sit8" value="12000">
+                    <input type="checkbox" name="sit" id="sit9" value="12000">
+                    <input type="checkbox" name="sit" id="sit10" value="12000">
+            </div>
+                
+                <div id="selectSit2">
+                    <input type="checkbox" name="sit" id="sit11" value="12000">
+                    <input type="checkbox" name="sit" id="sit12" value="12000">                
+                    <input type="checkbox" name="sit" id="sit13" value="12000">
+                    <input type="checkbox" name="sit" id="sit14" value="12000">
+                    <input type="checkbox" name="sit" id="sit15" value="12000">
+                    <input type="checkbox" name="sit" id="sit16" value="12000">
+                    <input type="checkbox" name="sit" id="sit17" value="12000">
+                    <input type="checkbox" name="sit" id="sit18" value="12000">
+                    <input type="checkbox" name="sit" id="sit19" value="12000">
+                    <input type="checkbox" name="sit" id="sit20" value="12000">
+                </div>
+                
+                
+                <div id="selectSit3">                    
+                    <input type="checkbox" name="sit" id="sit21" value="12000">
+                    <input type="checkbox" name="sit" id="sit22" value="12000">                
+                    <input type="checkbox" name="sit" id="sit23" value="12000">
+                    <input type="checkbox" name="sit" id="sit24" value="12000">
+                    <input type="checkbox" name="sit" id="sit25" value="12000">
+                    <input type="checkbox" name="sit" id="sit26" value="12000">
+                    <input type="checkbox" name="sit" id="sit27" value="12000">
+                    <input type="checkbox" name="sit" id="sit28" value="12000">
+                    <input type="checkbox" name="sit" id="sit29" value="12000">
+                    <input type="checkbox" name="sit" id="sit30" value="12000">
+                </div>
+            
+        
+        
+            <br>
+        <div id="total">가격은 : </div>
+    </div>
+    <script src="./영화예매.js"></script>
+
+
+
+</body>
+</html>

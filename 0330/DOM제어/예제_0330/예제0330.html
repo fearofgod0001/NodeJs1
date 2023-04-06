@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        .addinput{
+            margin: 0px;
+           display: flex;
+        }
+        #inputclass{
+            width: 250px;
+            border-radius: 4px;
+            border:3px solid rgb(68, 81, 255);
+        }
+        .addclass{
+            width: 100px;
+            background-color: black;
+            color: white;
+        }
+        ul{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>DOM 추가/삭제</h1>
+        <p>공부할 과목을 기록해 보세요.</p>
+        <p>공부가 끝난 과목은 클릭해서 삭제할 수 있습니다.</p>
+            <form action="#" class="addinput">
+                <input type="text" id="subject" autofocus>
+                <button class="addclass" onclick="addClass(); return false;">추가</button>
+            </form>
+            <hr>
+                <ul id="itemList">
+                </ul>        
+    </div>
+   
+
+    <script src="./예제0330.js"></script>
+</body>
+</html>

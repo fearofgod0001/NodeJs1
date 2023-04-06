@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            border: 1px solid black;
+         
+
+        }
+        .inner{
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="idCon" class="inner">
+            <input type="text" name="idChk" id="id">
+            <span id = "idSpan"></span> 
+            <button id="idChk" onclick="idCheck()">확인</button>
+        </div>
+        
+        <div id="pwdCon" class="inner">
+            <input type="password" name="pwdChk" id="pwd">
+            <span id = "pwdSpan"></span> 
+            <button id="pwdChk" onclick="pwdCheck()">확인</button>
+        </div>
+        <div id="emailCon" class="inner">
+            <input type="text" name="mailChk" id="email" >
+            <span id = "emailSpan"></span> 
+            <button id="mailChk" onclick="mailCheck()">확인</button>
+        </div>
+        <div id="pNumCon" class="inner">
+            <input type="text" name="pNumChk" id="pNum" placeholder="" onkeyup="if(window.event.keyCode==13){pNumCheck()}"><br>
+            <span id = "pNumSpan"></span> 
+            <!-- <button id="pNumChk" onclick="pNumCheck()">확인</button> -->
+        </div>
+
+        <button id="lastCheck" >회원 가입</button>
+
+    </div>
+
+    <script src="./회원가입.js"></script>
+
+</body>
+</html>
